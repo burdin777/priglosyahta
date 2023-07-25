@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+}
+body {
+    height:auto ;
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    background: #dadada;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.main a {
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 2px #254441;
+    border-radius: 25px;
+    padding: 0.5%;
+    box-shadow: 0 4px 10px #254441;
+
+}
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 845px;
+    background: url(../img/fon6.jpeg) 58%;
+    background-size: cover;
+}
+
+.as {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.as h1 {
+    font-size: 20px;
+    color: snow;
+    text-shadow: 0 4px 10px snow;
+}
+.data h2 {
+    font-size: 20px;
+    color: #000000;
+    
+}
+.as img {
+    width: 10%;
+    height: 10%;
+}
+.data {
+    display: flex;
+    justify-content: center;
+}
+.ukrashen {
+    margin-top: 35px;
+    padding-left: 50px;
+    height: 30%;
+    width: auto;
+    
+    
+     position: relative;
+    z-index: 2;
+
+  opacity: 0;
+
+    -webkit-animation: titlemove 1s forwards;
+    -o-animation: titlemove 1s forwards;
+    animation: titlemove 1s forwards;
+
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+
+.conteiner{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@media (max-width:1199px){
+    .conteiner{
+        max-width: 992px;
+    }
+}
+
+@media (max-width:992px){
+    .conteiner{
+        max-width: 750px;
+    }
+}
+@media (max-width:749px){
+    .conteiner{
+        max-width: none;
+    }
+}
+
+
+
+
+@keyframes titlemove {
+    from {
+        opacity: 0;
+        margin-top: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
