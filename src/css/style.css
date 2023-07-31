@@ -166,10 +166,13 @@ nav {
 .fotoMi {
     display: flex;
     justify-content: center;
-    padding-top: 220px;
+    padding-top: 125px;
 }
 .fotoMi img {
-    width: 10%;
+    width: 30%;
+}
+.fotoVkruge {
+    
 }
 
 .mesto {
