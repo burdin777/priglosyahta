@@ -8,256 +8,384 @@ body {
     font-family: Arial, sans-serif;
     background: #dadada;
 }
-
 nav {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-    height: 50px;
-}
-
-@font-face {
-    font-family: bethoveen;
-    src: url(../fonts/bethoveen.ttf);
-}
-
-.main a {
-    color: #000000;
-    font-size: 15px;
-    text-transform: uppercase;
-    border: 2px #254441;
-    border-radius: 25px;
-    padding: 2%;
-    box-shadow: 0 4px 10px #254441;
-
-}
-
-.main {
-    display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-content: center;
+}
+.main {
     width: 100%;
     height: 845px;
-    background: url(../img/fon6.jpeg) 58%;
-    background-size: cover;
+    background: #fef5f2;
 }
 
-.as {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+/* Dropdown button */
+.dropbtn {
+   padding: 16px;
+    background-color: #fef5f2;
+    cursor: pointer;
 }
-
-.as h1 {
-    font-size: 60px;
-    color: snow;
-    font-family: bethoveen;
-    text-shadow: 0 4px 10px snow;
+.dropbtn img {
+    width: 75px;
+    height: 30px;
 }
-.data h2 {
-    font-size: 52px;
-    color: white;
-    font-family: bethoveen;
-    
+/* div - для позиции кнопки */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
-.as img {
-    width: 10%;
-    height: 10%;
-}
-.data {
-    display: flex;
-    justify-content: center;
-}
-.ukrashen {
+/*Контент для кнопки*/
+.dropdown-content {
     display: none;
-    margin-top: 35px;
-    padding-left: 50px;
-    height: 30%;
-    width: auto;
-    
-    
-     position: relative;
-    z-index: 2;
-
-  opacity: 0;
-
-    -webkit-animation: titlemove 1s forwards;
-    -o-animation: titlemove 1s forwards;
-    animation: titlemove 1s forwards;
-
-    -webkit-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
+    z-index: 1;
+}
+/*ссылки контента*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Выбор цвета кнопки при наведении мыши */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+/* Показать меню при наведении */
+.dropdown:hover .dropdown-content {
+}
+/* настройка цвета контента при наведении мыши*/
+.dropdown:hover .dropbtn {
+   
+}
+.priglos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.priglos h1 {
+    font-size: 75px;
+    font-family: bethoveen;
+}
+.priglos h2 {
+    font-size: 35px;
+}
+.main h4 {
+    padding-top: 25px;
+    font-size: 23px;
+    text-align: center;
+    color: #eeb87d;
+}
+.data h3 {
+    font-family: bethoveen;
+    font-size: 45px;
+    text-align: center;
+}
+.fotoWi {
+    width: 100%;
+    padding-top: 50px;
 }
 
 .info {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
     width: 100%;
-    height: 845px;
-    background: url(../img/aonKolca.jpg) 20% 1%/ 180% no-repeat;
+    height: 500px; 
+    background: #fef5f2;
 }
-.info h1 {
-    margin-top: 30px;
-    font-size: 27px;
+.miZenimsa {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     
-    padding-left: 35%;
-    color: #fcc5e9;
-    text-shadow: 0 4px 12px #2c252a;
-    
+}
+.miZenimsa h1 {
+    opacity: .3;
+    font-size: 35px;
+    font-family: dreams;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eeb87d;
+}
+.miZenimsa h2 {
+    font-size: 32px;
+    padding-left: 15%;
+    margin-top: -3%;
+}
+.info h3 {
+    padding-top: 15px;
+    padding-left: 15%;
+}
+.info img {
+    padding-top: 20px;
+    padding-left: 15%;
+    width: 30%;
 }
 .info p {
-    font-size: 18px;
-    margin-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-    line-height: 23px;
+    font-size: 15px;
+    margin-top: 35px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
+    line-height: 20px;
 }
 .infoData {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin-top: 10px;
-    margin-left: 20%;
-}
-.info img {
-    width: 15%;
-    margin-top: 440px;
+    margin-top: 7px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .infoData h2 {
-    color: #fcc5e9;
-    border-top: 2px solid #fcc5e9;
-    border-bottom: 2px solid #fcc5e9;
-    padding: 5px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #eeb87d;
+    border-bottom: 2px solid #eeb87d;
+    color: #eeb87d;
 }
 
-
-.mi {
+.loveStory {
     width: 100%;
-    height: 840px;
-    background: #e1e9cf;
-}
-.logo h2 {
-    padding-top: 55px;
-    padding-bottom: 80px;
-    text-align: center;
-    font-family: bethoveen;
-    font-size: 50px;
-    color: black;
-}
-.mi p {
-    font-size: 15px;
-    padding-left: 8%;
-    padding-right: 8%;
-    text-align: center;
-    line-height: 25px;
-    padding-bottom: 15px;
-}
-.mi h1 {
-    text-align: center;
-    font-size: 15px;
-}
-.fotoMi {
+    height: 950px;
+    background: #fef5f2;
     display: flex;
-    justify-content: center;
-    padding-top: 125px;
+    flex-direction: column;
 }
-.fotoMi img {
-    width: 30%;
+.loveStory h1 {
+    opacity: .3;
+    font-size: 35px;
+    font-family: dreams;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eeb87d;
 }
-.fotoVkruge {
-    
+.loveFoto img {
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.serdce img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    width: 50%;
+}
+.loveStory h2 {
+    margin-top: -20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.loveStory p {
+    font-size: 15px;
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 20px;
 }
 
 .mesto {
     display: flex;
     flex-direction: column;
-    justify-items: end;
     width: 100%;
-    height: 840px;
-    background: url(../img/fonokean.jpg) 100%;
+    height: 845px;
+    background: #fef5f2;
 }
 .mesto h1 {
-    padding-top: 20px;
-    font-size: 30px;
+    opacity: .3;
+    font-size: 35px;
+    font-family: dreams;
     text-align: center;
-    text-shadow: 0 4px 12px;
-    
+    text-transform: uppercase;
+    color: #eeb87d;
 }
 .mesto h2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 32px;
+    padding-left: 15%;
+    margin-top: -12%;
+}
+.fotoMesto {
     margin-top: 40px;
-    color: whitesmoke;
 }
-.mesto p {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 75px;
-    font-size: 15px;
-    color: whitesmoke;
-    line-height: 25px;
-    
+.fotoMesto img {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
 }
-.mesto img {
-    margin-top: 20%; 
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 45%;
-    padding: 1%;
-    background: white;
+.mesto h3 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 25px;
+    text-transform: uppercase;
 }
-.mesto2 {
+.vstrecha {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 1px solid #eeb87d;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.vstrecha1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    
+    border-top: 1px solid #eeb87d;
+    border-bottom: 1px solid #eeb87d;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    font-size: 15px;
+}
+
+.mesto h5 {
+    text-align: end;   
 }
 
 .otveti {
     width: 100%;
-    height: 840px;
-    background: url(../img/mesto5.jpg) 50% /auto 103%;
+    height: 945px;
+    background: #fef5f2;
 }
-.otveti h1 {
-    padding-top: 20px;
-    font-size: 19px;
-    font-weight: bold;
+.dresscode {
+    display: flex;
+    flex-direction: column;
+}
+.dresscode h1 {
+    opacity: .3;
+    font-size: 35px;
+    font-family: dreams;
+    text-align: center;
     text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 30px;
-    color: #0c494e;
-    margin-bottom: 10px;
+    color: #eeb87d;
 }
-.otveti img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-
+.dresscode p {
+    margin-top: -15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 20px;
 }
-.otveti h2 {
+.dresscode img {
+    margin-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.vopros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vopros h1 {
+    margin-top: 100px;
+    opacity: .3;
+    font-size: 35px;
+    font-family: dreams;
     text-align: center;
+    text-transform: uppercase;
+    color: #eeb87d;
+}
+.vopros h2 {
+    padding-top: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
     font-size: 20px;
-}
-.otveti p {
     text-align: center;
-    font-size: 25px;
-    padding-top: 15px;
+}
+.vopros1 p {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
 }
 
+.vopros1 img {
+    
+    width: 6%;
+}
+.vopros h3 {
+    padding-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eeb87d;
+}
+.vopros1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.zayac img {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.zakluchenie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 845px;
+    background: #fef5f2;
+}
+.foto3 img {
+    margin-top: 120px;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.zakluchenie h1 {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.zakluchenie h2 {
+    margin-top: -30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.zakluchenie p {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: bethoveen;
+    src: url(../fonts/bethoveen.ttf);
+}
+@font-face {
+    font-family:dreams;
+    src: url(../fonts/dreams.ttf);
+}
 .conteiner{
-    max-width: 1920px;
+    max-width: 420px;
     margin: 0 auto;
 }
 
@@ -275,21 +403,6 @@ nav {
 @media (max-width:749px){
     .conteiner{
         max-width: none;
-    }
-}
-
-
-
-
-@keyframes titlemove {
-    from {
-        opacity: 0;
-        margin-top: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 0;
     }
 }
 

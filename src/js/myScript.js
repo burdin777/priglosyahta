@@ -29,7 +29,10 @@ $('a[href^="#"]').click(function(){
 });
 
     
-
+$(".dropbtn").on("click touchend", function() {
+  $(".dropdown-content").slideToggle("slow");
+  return false;
+});
     
 
 
